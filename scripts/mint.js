@@ -8,7 +8,7 @@ async function main() {
   const provider = new ethers.providers.JsonRpcProvider(networkAddress);
   const signer = new ethers.Wallet(privateKey, provider);
 
-  const contractAddress = "";
+  const contractAddress = "0xA850cF8289419D21AbC27558bF3F844d5225B29E";
 
   const City_pods = await ethers.getContractFactory("Pods", signer);
   const pods = await City_pods.attach(contractAddress);
